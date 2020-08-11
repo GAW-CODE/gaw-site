@@ -1,0 +1,9 @@
+{
+  "apps": [
+    {
+      "name": "gawhc-site",
+      "script": "npm",
+      "args" : "start"
+    }
+  ]
+}
