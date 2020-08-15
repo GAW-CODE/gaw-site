@@ -1,6 +1,7 @@
 
 import React from "react";
 import {MDBCard, MDBCardBody, MDBCardText, MDBCardTitle, MDBContainer, MDBRow} from "mdbreact";
+import Footer from "../component/Footer";
 
 export default function Home() {
     return (
@@ -13,6 +14,7 @@ export default function Home() {
                     </MDBCardTitle>
                 </MDBCardBody>
             </MDBCard>
+            <Footer />
         </MDBContainer>
     );
 }
