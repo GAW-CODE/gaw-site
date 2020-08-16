@@ -1,11 +1,5 @@
 [GAW-SITE](https://www.gawhscode.com) - The future official website for Glen A. Wilson CODE Team
 
-Continuous Delivery Status (Builds the project and deploy to our live site in our own server instance): 
-![C/D](https://github.com/GAW-CODE/gaw-site/workflows/C/D/badge.svg) 
-
-Continuous Integration Status (Builds the project through GitHub actions and cache all the dependency artifacts):
-![C/I](https://github.com/GAW-CODE/gaw-site/workflows/C/I/badge.svg) 
-
 ## Statuses
 * C/D - ![C/D](https://github.com/GAW-CODE/gaw-site/workflows/C/D/badge.svg) 
 * C/I - ![C/I](https://github.com/GAW-CODE/gaw-site/workflows/C/I/badge.svg) 
