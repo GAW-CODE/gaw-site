@@ -26,13 +26,13 @@ class Navigation extends Component {
                     <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
                         <MDBNavbarNav left>
                             <MDBNavItem>
-                                <MDBNavLink to="/">Home</MDBNavLink>
+                                <MDBNavLink to="/">TRYOUT</MDBNavLink>
                             </MDBNavItem>
                             <MDBNavItem>
-                                <MDBNavLink to="/tryout">Tryout</MDBNavLink>
+                                <MDBNavLink to="/tryout">TRYOUT</MDBNavLink>
                             </MDBNavItem>
                             <MDBNavItem>
-                                <MDBNavLink to="/about-us">About Us</MDBNavLink>
+                                <MDBNavLink to="/about-us">ABOUT US</MDBNavLink>
                             </MDBNavItem>
                         </MDBNavbarNav>
                     </MDBCollapse>
