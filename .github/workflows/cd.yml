@@ -1,35 +1,16 @@
 on: push
 name: Continuous Delivery
+
 jobs:
-  build-and-publish:
-    name: build and publish
-    runs-on: ubuntu-latest
+  deploy:
+    if: github.ref == 'refs/heads/master'
+    runs-on: [ubuntu-latest]
     steps:
-      - name: Build and push Docker images
-        uses: docker/build-push-action@v1.1.0
-      - uses: actions/checkout@master
-      - name: npm install
-        uses: actions/npm@master
+      - uses: actions/checkout@v1
+      - name: Push to server
+        uses: appleboy/ssh-action@master
         with:
-          args: install
-      - name: npm test
-        uses: actions/npm@master
-        with:
-          args: run test
-      - name: npm lint
-        uses: actions/npm@master
-        with:
-          args: run lint
-      - name: docker build
-        uses: actions/docker/cli@master
-        with:
-          args: build -t gawhscode/gaw-site .
-      - name: docker login
-        uses: actions/docker/login@master
-        env:
-          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-      - name: docker push
-        uses: actions/docker/cli@master
-        with:
-          args: push gawhscode/gaw-site
+          host: ${{ secrets.SERVER_IP }}
+          username: ${{ secrets.SERVER_USERNAME }}
+          password: ${{ secrets.SERVER_PASSWORD }}
+          script: cd ${{ secrets.PROJECT_PATH }} && git fetch --all && git reset --hard origin/master && git pull origin master && npm install && npm run build
