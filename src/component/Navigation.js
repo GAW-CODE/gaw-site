@@ -20,19 +20,24 @@ class Navigation extends Component {
             <Router>
                 <MDBNavbar color="blue" dark expand="md">
                     <MDBNavbarBrand>
-                        <strong className="white-text">GAWCODE</strong>
+                        <a href="/">
+                            <strong className="white-text">GAWCODE</strong>
+                        </a>
                     </MDBNavbarBrand>
                     <MDBNavbarToggler onClick={this.toggleCollapse} />
                     <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
                         <MDBNavbarNav left>
                             <MDBNavItem>
-                                <MDBNavLink to="/">TRYOUT</MDBNavLink>
-                            </MDBNavItem>
-                            <MDBNavItem>
                                 <MDBNavLink to="/tryout">TRYOUT</MDBNavLink>
                             </MDBNavItem>
                             <MDBNavItem>
                                 <MDBNavLink to="/about-us">ABOUT US</MDBNavLink>
+                            </MDBNavItem>
+                        </MDBNavbarNav>
+
+                        <MDBNavbarNav right>
+                            <MDBNavItem>
+                                <a href="https://github.com/GAW-CODE/gaw-site" target="_blank" className="text-light">SITE SOURCE ON GITHUB</a>
                             </MDBNavItem>
                         </MDBNavbarNav>
                     </MDBCollapse>

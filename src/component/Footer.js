@@ -23,13 +23,16 @@ class Footer extends Component {
                         </MDBCol>
                         <MDBCol md="6">
                             <h5 className="title pl-2">FIND US</h5>
-                            <MDBBtn color="dark" social="git" size="md" href="https://www.github.com/GAW-CODE">
+                            <MDBBtn color="dark" social="git" size="md" href="https://link.gawhscode.com/github">
                                 <MDBIcon fab icon="github" className="pr-1" /> GITHUB
                             </MDBBtn>
-                            <MDBBtn color="red" social="yt" size="md" href="https://www.youtube.com/channel/UCUBqAzggd_nAnn8ll6fmGUw">
+                            <MDBBtn color="dark" social="dis" size="md" href="https://link.gawhscode.com/discord">
+                                <MDBIcon fab icon="discord" className="pr-1" /> DISCORD
+                            </MDBBtn>
+                            <MDBBtn color="red" social="yt" size="md" href="https://link.gawhscode.com/youtube">
                                 <MDBIcon fab icon="youtube" className="pr-1" /> YOUTUBE
                             </MDBBtn>
-                            <MDBBtn color="pink" social="ins" size="md" href="https://www.instagram.com/gawcode/?hl=en">
+                            <MDBBtn color="pink" social="ins" size="md" href="https://link.gawhscode.com/instagram">
                                 <MDBIcon fab icon="instagram" className="pr-1" /> INSTAGRAM
                             </MDBBtn>
                         </MDBCol>

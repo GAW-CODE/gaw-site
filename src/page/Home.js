@@ -5,7 +5,7 @@ import Footer from "../component/Footer";
 
 export default function Home() {
     return (
-        <MDBContainer className="py-5">
+        <MDBContainer fluid className="py-5">
             <MDBCard>
                 <MDBCardBody>
                     <MDBCardTitle className="flex-center" >Glen A. Wilson CODE Team</MDBCardTitle>
