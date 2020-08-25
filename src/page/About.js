@@ -15,24 +15,30 @@ export default function About() {
             </MDBCard>
             <MDBContainer fluid className="text-center py-3">
                 <MDBRow>
-                    <MDBCol>
+                    <MDBCol md="4" className="pb-2">
                         <MDBCard>
                             <MDBCardBody>
                                 <MDBCardTitle>Frontend</MDBCardTitle>
+                                <MDBCardText>User-Interaction / Display</MDBCardText>
+                                <MDBCardBody>The frontend division is for xxxxxxx (Currently a placeholder)</MDBCardBody>
                             </MDBCardBody>
                         </MDBCard>
                     </MDBCol>
-                    <MDBCol>
+                    <MDBCol md="4" className="pb-2">
                         <MDBCard>
                             <MDBCardBody>
                                 <MDBCardTitle>Backend</MDBCardTitle>
+                                <MDBCardText>Server End / Undisplayed Processes</MDBCardText>
+                                <MDBCardBody>The backend division is for xxxxxxx (Currently a placeholder)</MDBCardBody>
                             </MDBCardBody>
                         </MDBCard>
                     </MDBCol>
-                    <MDBCol>
+                    <MDBCol md="4" className="pb-2">
                         <MDBCard>
                             <MDBCardBody>
                                 <MDBCardTitle>Hardware</MDBCardTitle>
+                                <MDBCardText>Robots / Machines</MDBCardText>
+                                <MDBCardBody>The hardware division is for xxxxxxx (Currently a placeholder)</MDBCardBody>
                             </MDBCardBody>
                         </MDBCard>
                     </MDBCol>
